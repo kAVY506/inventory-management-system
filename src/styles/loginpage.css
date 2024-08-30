@@ -1,0 +1,95 @@
+/* Container for the entire login page */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c1b79762;
+  }
+
+/* Container for the login form */
+.loginContainer {
+  background-color: #237f8d;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Form title */
+.loginContainer h2 {
+  margin-bottom: 15px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Input container for label and input */
+.inputContainer {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Input labels */
+.inputContainer label {
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Text input fields */
+.inputContainer input {
+  width: 280px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white ;
+}
+
+/* Submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #b2c275;
+}
+
+/* Signup prompt */
+.signup {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.signup a {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* Additional styling for smaller screens */
+@media (max-width: 480px) {
+  .loginContainer {
+    width: 80%;
+    padding: 15px;
+  }
+
+  button[type="submit"] {
+    padding: 10px;
+  }
+}
